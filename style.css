@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    line-height: 30px;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(44, 43, 40, 0.9), rgba(54, 52, 51, 0.29)), url("pexels-peter-szabo-218434.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.color1{
+    color: rgba(16, 188, 16, 0.885);
+}
+
+.color2{
+    color: rgba(255, 255, 255, 0.868);
+}
+
+.color3{
+    color: rgba(255, 0, 0, 0.874);
+}
+
+.card_display_on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    gap: 20px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.p_responsive{
+    display: none;
+}
+
+.card_display_off {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    gap: 20px;
+    display: none;
+    
+}
+
+.hero_display_off{
+    display: none;
+}
+
+.hero_display_on{
+    visibility: visible;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratita{
+    height: 250px;
+    min-width: 150px;
+}
+
+
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    gap: 40px;
+    width: 50vw;
+    background-color: rgba(1, 1, 1, 0.703);
+    min-width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+#boton {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(174, 92, 25, 0.459);
+    color: rgba(234, 173, 20, 0.862);
+    font-size: 25px;
+}
+
+
+
+#inputsito {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0.556);
+}
+
+#foto-pizza {
+    height: 70%;
+    border-radius: 100%;
+    width: 40%;
+    max-width: 320px;
+    opacity: 0.8;
+    object-position: center;
+
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+}
+
+#h3 {
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(200, 51, 14, 0.726);
+}
+
+p {
+    font-size: 25px;
+    color:rgba(255, 191, 0, 0.636)
+}
+
+@media (max-width: 500px) {
+    .ratita{
+        display: none;
+    }
+
+
+    .card_container{
+        width: 100%;
+        height: 100vh;
+        gap: 50px;
+        text-align: center;
+        background-color: rgba(1, 1, 1, 0.882);
+        border-radius: 0px;
+    }
+
+    body{
+        background-image: none;
+        background-color: black;
+        width: 300px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+
+    #hero .p_desktop{
+        display: none;
+    }
+
+    .p_responsive{
+        display: inline-block;
+        text-align: center;
+        width: 250px;
+        
+    }
+
+    #formulario{
+        width: 90%;
+    }
+
+    #inputsito {
+       width: 100%;
+       border-radius: 0px;
+    }
+
+    #boton {
+        width: 100%;
+        border-radius: 0px;
+        height: 50px;
+       
+    }
+
+
+    }
+    
+    @media(max-height: 520px){
+
+        h1{
+            display: none;
+        }
+
+        .card_container{
+            gap: 10px;
+        }
+
+        
+    }
+
+    @media(max-height: 459px){
+
+        #foto-pizza{
+            display: none;
+        }
+
+        .card_container{
+            gap: 5px;
+        }
+
+        
+    }
+
+    @media (max-width: 772px){
+        #hero .p_desktop{
+            display: none;
+        }
+
+        body{
+            margin: 0 auto;
+        }
+
+        .ratita{
+            display: none;
+        }
+
+        .p_responsive{
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            
+        }
+
+        .card_container{
+            gap: 20px;
+            width: 80%;
+            height: 95%;
+        }
+
+        #foto-pizza {
+            height: 50%;
+            width: 40%;
+            min-width: 200px;
+            
+        
+        }
+
+    }
